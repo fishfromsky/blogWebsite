@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ blog_type.type_name }}
+{% endblock %}
+
+{% block content %}
+    {% for item in blogs %}
+        <h3>{{ item.title }}</h3>
+        <p>作者：{{ item.author }}</p>
+        <P>发表日期：{{ item.created_time|date:'Y-m-d H-m-s' }}</P>
+        <p>{{ item.content }}</p>
+    {% endfor %}
+{% endblock %}
+

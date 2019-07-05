@@ -1,0 +1,26 @@
+.ul blog-types{
+    list-style-type: none;
+}
+.div.blog h3{
+    margin-top: 0.5em;
+}
+div.blog:not(:last-child){
+    margin: 0 0 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+div.comment-area{
+    margin-top: 2em;
+}
+
+h3.comment-area-title{
+    border-bottom: 1px #cdcdcd solid;
+    padding-bottom: 0.4em;
+}
+input.sending{
+    background-color: #1b6d85;
+    color: white;
+    width: 10%;
+}

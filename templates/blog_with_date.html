@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">日期分类</h3>
+                    </div>
+                    <div class="panel-body">
+                            {% for item in blog_date %}
+                                <div class="body">
+                                    <h3>{{ item.title }}</h3>
+                                    <p>作者：{{ item.author }}</p>
+                                    <p>发表日期：{{ item.created_time|date:'Y-m-d' }}</p>
+                                    <p>{{ item.content }}</p>
+                                </div>
+                            {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
